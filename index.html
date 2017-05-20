@@ -17,6 +17,28 @@
 	<script type="text/javascript" src="./assets/javascript/javascript.js"></script>
 </head>
 <body>
-	
+<!-- title -->
+	<div class="container">
+		<h1 class="text-center">Giphy API Generator</h1>
+		<form class="row">
+<!-- empty div for buttons to populate -->				
+		<div class="row">
+			<div class="col-md-12" id="buttonHolder">
+			</div>
+		</div>
+
+<!-- search input field and submit button to trigger new topic add -->			
+		<div class="row">	
+			<div class="col-md-4">
+				<form class="input-group-btn" id="input-form">
+					<input id="topic-input" type="text" class="form-control"  for="topic-input" placeholder="Search here...">
+					<input class="search" id="add-topic" type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="col-md-8" id="gifs-appear-here">
+			</div>
+		</div>
+		</form>
+	</div>
 </body>
 </html>
