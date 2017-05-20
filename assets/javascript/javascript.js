@@ -85,8 +85,6 @@ $(document).ready(function() {
 			$(".image").on("click", function() {
 				//variable for data-state of gif image
     			var gifState = $(this).attr("data-state");
-    			//check on change of data-state
-    			console.log("gif data-state: " + state);
     			console.log("this is: " + this);
     			//if statement that changes data-state to still or animate based on current state
     			if (gifState === "still") {
