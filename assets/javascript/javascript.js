@@ -42,8 +42,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		var topic = $(this).attr("data-topic");
 		console.log(this);
-		//creating variable for URL with API key included (added limit=10 to show 10 gifs)
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10"
+		//creating variable for URL with API key included (added limit=5 to show 5 gifs)
+		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=5"
 		//perform AJAX request for data from giphyAPI
 		$.ajax({
 			url: queryURL,

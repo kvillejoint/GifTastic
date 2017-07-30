@@ -19,26 +19,36 @@
 <body>
 <!-- title -->
 	<div class="container">
-		<h1 class="text-center">Giphy API Generator</h1>
+		<div class="jumbotron">
+			<h1 class="text-center">Giphy API Generator</h1>
+			<p class="text-center">Search your favorite topics and generate your own gifs.</p>
+			<p class="text-center">Start and stop gif animations just by clicking them.</p>
+  	</div>
+		
 		<form class="row">
 <!-- empty div for buttons to populate -->				
-		<div class="row">
+		<div class="row center">
 			<div class="col-md-12" id="buttonHolder">
 			</div>
 		</div>
-
 <!-- search input field and submit button to trigger new topic add -->			
-		<div class="row">	
+		<div class="row">
 			<div class="col-md-4">
-				<form class="input-group-btn" id="input-form">
+			</div>	
+			<div class="col-md-4">
+				<div class="input-group">
 					<input id="topic-input" type="text" class="form-control"  for="topic-input" placeholder="Search here...">
-					<input class="search" id="add-topic" type="submit" value="Submit">
-				</form>
+						<span class="input-group-btn">
+								<button class="btn btn-default" type="button" class="search" id="add-topic" type="submit" value="Submit">Submit</button>
+						</span>
+				</div>
 			</div>
-			<div class="col-md-8" id="gifs-appear-here">
+			<div class="col-md-4">
 			</div>
-		</div>
-		</form>
+<!-- Empty div for gits to populate once new gif buttons are create -->	
+			<div class="col-md-12" id="gifs-appear-here">
+			</div>
+		</div>	
 	</div>
 </body>
 </html>
